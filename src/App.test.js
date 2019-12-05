@@ -1,10 +1,13 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 import App from './App'
+import Header from './Header'
 
 describe('header', () => {
-  it('renders one element header', () => {
+  it('renders a header with a title', () => {
     const wrapper = shallow(<App />)
-    expect(wrapper.find('header')).toHaveLength(1)
+    expect(wrapper.find(Header).exists()).toBeTruthy()
+    expect(wrapper.find(Header).props().title).toEqual('POKE')
   })
+
 })
