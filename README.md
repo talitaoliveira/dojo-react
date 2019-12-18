@@ -13,10 +13,10 @@ Serão sessões de Coding Dojo com 1h30min de duração cada uma, no [formato Ra
 Para este Dojo é bom conhecer ao menos o basiquinho de Javascript. 
 
 ## QA
-Q: Quais os pré-requisitos para poder participar?
+Q: Quais os pré-requisitos para poder participar?  
 A: Tempo livre para ir à todas as seções e experiência prévia com alguma outra linguagem de programação
 
-Q: Preciso saber alguma coisa de React?
+Q: Preciso saber alguma coisa de React?  
 A: Não precisa muito. Nós sabemos bem pouco :D
 
 
