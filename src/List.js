@@ -1,17 +1,20 @@
-import React from 'react'
+import React from 'react';
+import './List.css';
 
 const List = props => (
-    <ul>
-        {
-            this.props.pokemon.map(pokemon => {
-                return <li
-                    key={pokemon}
-                    className="pokemon-name"
-                    onClick={() => this.setState({ selectedPokemon: pokemon })}
-                >{pokemon}</li>
-            })
-        }
-    </ul>
-)
+  <ul className="list">
+    {this.props.pokemon.map(pokemon => {
+      return (
+        <li
+          key={pokemon}
+          className="pokemon-name"
+          onClick={() => this.setState({ selectedPokemon: pokemon })}
+        >
+          {pokemon}
+        </li>
+      );
+    })}
+  </ul>
+);
 
-export default List
+export default List;
