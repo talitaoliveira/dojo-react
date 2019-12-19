@@ -1,35 +1,22 @@
-
-import React from 'react'
-import './App.css'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 import List from './List'
 import Header from './Header'
-import Example from './Example'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
 
 class App extends React.Component {
   state = {
     selectedPokemon: ''
   }
 
-  render () {
+  render() {
     return (
-      <div className='App'>
-        <Router>
-          <Header title='POKE' />
-          <List />
-          <Switch>
-            <Route path='/example'>
-              <Example />
-            </Route>
-          </Switch>
-          <div className='pokemon-detail'>{this.state.selectedPokemon}</div>
-        </Router>
+      <div className="App">
+        <Header title="POKE" />
+        <List/>
+        <div className="pokemon-detail">{this.state.selectedPokemon}</div>
       </div>
-    )
+    );
   }
 }
 
@@ -37,4 +24,4 @@ App.defaultProps = {
   pokemon: []
 }
 
-export default App
+export default App;
