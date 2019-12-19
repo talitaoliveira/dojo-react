@@ -1,19 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import List from './List'
-import Header from './Header'
+import Header from './Header';
+import List from './List';
 
 class App extends React.Component {
   state = {
     selectedPokemon: ''
-  }
+  };
 
   render() {
     return (
       <div className="App">
         <Header title="POKE" />
-        <List/>
+        <List
+          pokemon={this.props.pokemon}
+          onClick={selectedPokemon => this.setState({ selectedPokemon })}
+        />
         <div className="pokemon-detail">{this.state.selectedPokemon}</div>
       </div>
     );
@@ -22,6 +24,6 @@ class App extends React.Component {
 
 App.defaultProps = {
   pokemon: []
-}
+};
 
 export default App;
