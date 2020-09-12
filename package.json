@@ -41,6 +41,6 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "fetch-mock": "^9.0.0-beta.2",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
